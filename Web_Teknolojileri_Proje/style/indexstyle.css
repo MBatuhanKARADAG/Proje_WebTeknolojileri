@@ -1,0 +1,45 @@
+header
+{
+	width: 40%;
+	padding-left: 5px;
+	padding-right: 5px;
+	float: center;
+  	font-style: italic;
+	background-color: lightcoral;
+}
+
+.hakkımda
+{
+	float:right;
+	background-color: darkslategray;
+	margin: 5px;
+  	padding: 25px;
+}
+
+body
+{
+    	background-color: darkseagreen;
+    	font-family: serif;
+    	color: #000;
+}
+
+img
+{
+	border-radius: 50%;
+}
+
+footer
+{
+	vertical-align:bottom ;
+    	background-color: darkgrey;
+   	color: green;
+    	text-align: center;
+    	padding: 30px;
+}
+
+h3
+{
+	color:IndianRed;
+}
+
+

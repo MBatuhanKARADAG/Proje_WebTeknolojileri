@@ -1,0 +1,51 @@
+header
+{
+	width: 40%;
+	border:1 px;
+	align: center;
+  	font-style: italic;
+	background-color: lightcoral;
+}
+
+.sınıf1
+{
+	align:center;
+	background-color: CornflowerBlue;
+	border:5 px;
+    	font-family: fantasy;
+	position: relative;
+}
+
+body
+{
+    	background-color: DarkKhaki;
+    	font-family: serif;
+    	color: #000;
+}
+
+img
+{
+	border: 1px solid #ddd;
+	border-radius: 50%;
+}
+
+footer
+{
+	vertical-align:bottom ;
+    	background-color: darkgrey;
+   	color: green;
+    	text-align: center;
+    	padding: 30px;
+}
+
+h3
+{
+	color:IndianRed;
+}
+
+aside
+{	
+	text-align: left;
+	background-color: PaleTurquoise;
+}
+

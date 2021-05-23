@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+    <html lang="tr">
+
+    <head>
+        <title>SEHRİM</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" type="text/css" href="style/sehrim.css">
+
+    <script>  
+        var slideIndex = 1;
+        showSlides(slideIndex);
+
+        // Next/previous controls
+        function plusSlides(n) 
+        {
+          showSlides(slideIndex += n);
+        }
+
+        // Thumbnail image controls
+        function currentSlide(n) 
+        {
+          showSlides(slideIndex = n);
+        }
+
+        function showSlides(n) 
+        {
+          var i;
+          var slides = document.getElementsByClassName("mySlides");
+          var dots = document.getElementsByClassName("dot");
+          if (n > slides.length) {slideIndex = 1}
+          if (n < 1) {slideIndex = slides.length}
+          for (i = 0; i < slides.length; i++) 
+          {
+              slides[i].style.display = "none";
+          }
+          for (i = 0; i < dots.length; i++) 
+          {
+              dots[i].className = dots[i].className.replace(" active", "");
+          }
+          slides[slideIndex-1].style.display = "block";
+          dots[slideIndex-1].className += " active";
+        }    
+    </script> 
+    </head>
+
+    <body>
+      <header><h3 align="center" style="color: SlateBlue;">ŞEHİRDEN MANZARALAR</h3></header>
+        <div class="slideshow-container">
+          <div class="mySlides fade">
+            <div class="numbertext">1 / 5</div>
+            <a href ="#balikligol"><img src="images/1.jpg" style="width:100%"></a>
+            <div class="text" style="background-color:MediumSeaGreen;">BALIKLIGÖL</div>
+          </div>
+
+          <div class="mySlides fade">
+            <div class="numbertext">2 / 5</div>
+            <a href ="#gobeklitepe"><img src="images/2.jpg" style="width:100%"></a>
+            <div class="text" style="background-color:MediumSeaGreen;">GÖBEKLİTEPE</div>
+          </div>
+
+          <div class="mySlides fade">
+            <div class="numbertext">3 / 5</div>
+            <a href ="#urfakalesi"><img src="images/8.jpg" style="width:100%"></a>
+            <div class="text" style="background-color:MediumSeaGreen;">URFA KALESİ</div>
+          </div>
+
+          <div class="mySlides fade">
+            <div class="numbertext">4 / 5</div>
+            <a href ="#baraj"><img src="images/9.jpg" style="width:100%"></a>
+            <div class="text" style="background-color:MediumSeaGreen;">ATATÜRK BARAJI</div>
+          </div>
+
+          <div class="mySlides fade">
+            <div class="numbertext">5 / 5</div>
+            <a href ="#müze"><img src="images/12.jpg" style="width:100%"></a>
+            <div class="text" style="background-color:MediumSeaGreen;" >URFA ARKEOLOJİ MÜZESİ</div>
+          </div>
+
+
+          <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+          <a class="next" onclick="plusSlides(1)">&#10095;</a>
+        </div>
+        <br>
+
+        <div style="text-align:center">
+          <span class="dot" onclick="currentSlide(1)"></span>
+          <span class="dot" onclick="currentSlide(2)"></span>
+          <span class="dot" onclick="currentSlide(3)"></span>
+          <span class="dot" onclick="currentSlide(4)"></span>
+          <span class="dot" onclick="currentSlide(5)"></span>
+        </div>
+
+        <section id="balikligol">
+          <p>
+            <h3>BALIKLIGÖL</h3>
+            Balıklıgöl, Şanlıurfa şehir merkezinin güneybatısında yer alan ve İbrahim peygamberin ateşe atıldığında düştüğü yer olarak bilinen bu iki göl, İslam alemi için kutsal sayılan balıkları ve çevrelerindeki tarihi eserler ile Şanlıurfa'nın en çok ziyaret edilen tarihî mekanlarındandır
+          </p>
+        </section>
+        <section id="gobeklitepe">
+          <p>
+            <h3>GÖBEKLİTEPE</h3>
+            Göbeklitepe veya Göbekli Tepe, Şanlıurfa il merkezinin yaklaşık olarak 22 km kuzeydoğusunda, Örencik köyü yakınlarında yer alan dünyanın bilinen en eski kült yapılar topluluğudur. Bu yapıların ortak özelliği, T biçimindeki 10-12 dikilitaşın yuvarlak planda dizilmiş, aralarının ise taş duvarla örülmüş olmasıdır
+          </p>
+        </section>
+        <section id="urfakalesi">
+          <p>
+            <h3>URFA KALESİ</h3>
+            Şanlıurfa Kalesi, ya da kısaca Urfa Kalesi, Türkiye'nin Şanlıurfa şehrinin merkezine bakan bir kaledir. Kale, antik dönemde Osroene tarafından inşa edilmiştir. Kalenin mevcut duvarları ise MS 814'te Abbâsîler tarafından yaptırılmıştır. Kale, günümüzde açık hava müzesi işlevi görmektedir.
+          </p>
+        </section>
+        <section id="baraj">
+          <p>
+            <h3>ATATÜRK BARAJI</h3>
+            Atatürk Barajı, Adıyaman ve Şanlıurfa illeri arasında, Fırat Nehri üzerinde kurulu olup, enerji ve sulama amaçlıdır. GAP Projesi içinde, Karakaya Barajının 180 km mansabında, Adıyaman iline 51 km uzaklıkta, Şanlıurfa ilinin Bozova ilçesine ise 24 km uzaklıkta olup, Fırat Nehri üzerinde kurulan barajdır.
+          </p>
+        </section>
+        <section id="müze">
+          <p>
+            <h3>ARKEOLOJİ MÜZESİ</h3>
+            Şanlıurfa Arkeoloji ve Mozaik Müzesi (eski ismiyle Şanlıurfa Arkeoloji Müzesi), mevcut eserlerin 1948 yılında toplanmaya başlanması ile birlikte ilk olarak 1969 yılında açılmıştır.Yeni müze, 24 Mayıs 2015 tarihinde açılışı Cumhurbaşkanı Recep Tayyip Erdoğan ile eski Kültür ve Turizm Bakanı Ömer Çelik tarafından gerçekleştirilen eski Şanlıurfa Müzesi'nin yerine geçen Türkiye'nin en büyük müzesidir.İçerisinde 73.800 arkeolojik ve etnografik eser bulunmaktadır
+          </p>
+    </body> 
+</html>

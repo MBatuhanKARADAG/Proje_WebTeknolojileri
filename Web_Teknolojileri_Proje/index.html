@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+    <html lang="tr">
+
+    <head>
+        <title>ANASAYFA</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" type="text/css" href="style/indexstyle.css">  
+    </head>
+
+    <body>
+        <header>  
+            <h1>HAKKINDA</h1>
+            <h5>Proje Kapsamındaki Diğer Sayfa Bağlantıları</h5>
+            <nav> 
+                <a href="#output1">HAKKINDA</a>
+                <a href="egitim.html" target="_blank">Egitim Bilgileri</a>
+                <a href="sehrim.html" target="_blank">Şehrim</a> 
+                <a href="mirasimiz.html" target="_blank">Mirasımız</a>  
+            </nav>
+        </header>
+        <section class="hakkımda">
+            <h1>ADMİN BİLGİLER</h1>
+            <img src="images/icon.JPG" width="200px" align="right">
+            <p>Adım Mustafa Batuhan Karadağ.<br>Sakarya Üniversitesi b201210381 numaralı,4.sınıf öğrencisiyim.
+                <br><br>Hobilerim
+                <li><a href="https://www.youtube.com/watch?v=XmtXC_n6X6Q" target="_blank">Belgesel İzlemek</a></li> 
+                <li>Kitap Okumak</li>
+                <li><a href="https://www.youtube.com/watch?v=xTvvQ65jWVs" target="_blank">Gökyüzü Gözlemi</a></li>
+                <br><br>İlgilendiğim Sporlar
+                <br><br>
+                <li>Güreş</li> 
+                <li>Savunma Sporları</li> 
+                <li>Yüzme</li> 
+            </p>
+        </section>
+        <hr>
+        <content id="output1">
+            <h3>GİRİŞ YAPINIZ:</h3>
+            <form action="loginbasarili.php" target="_blank" method="post">
+                <fieldset>
+                    <legend>Gerekli Bilgiler</legend>
+                    <div>
+                        <label for="name">Kullanıcı Adı:</label>
+                        <input type="text" id="name" name="userName" required placeholder="Lütfen bilginizi giriniz..." autofocus> 
+                    </div>
+                    <div>
+                        <label for="password">Parola:</label>
+                        <input type="password" id="password" name="password" required placeholder="Lütfen bilginizi giriniz..."> 
+                    </div>
+                    <div>
+                        <label for="email">Email:</label>
+                        <input type="email" id="email" name="email" required placeholder="Lütfen bilginizi giriniz..."> 
+                    </div>
+                    <input type="submit">
+                </fieldset>
+            </form>
+            <form action="js/iletisim_page.html" method="get" target="_blank">    
+                <div> <h3>İLETİŞİM:</h3>
+                    Cinsiyetiniz nedir?
+                    <br> 
+                    <input type="radio" name="gender" value="male" checked> Erkek
+                    <input type="radio" name="gender" value="female">Kadın 
+                    <input type="radio" name="gender" value="other"> Belirtmek İstemiyorum
+                </div>
+                <br>
+                <div>
+                    <label for="message">Mesaj:</label>
+                    <textarea id="message" name="message" rows="4" cols="40" maxlength="40" placeholder="Mesaj alanı burasıdır..."></textarea>
+                </div>
+                <br>
+                <div>
+                    <label for="mesaj türü">Mesaj Türünüzü Belirtiniz:</label>
+                    <select name ="mesaj türü" >
+                        <option value="öneri">Öneri </option>
+                        <option value="talep">Talep </option>
+                        <option value="şikayet">Şikayet </option>
+                    </select>
+                </div>
+                <br>
+                <div>
+                    <label for="iller">Bulunduğunuz ili seçiniz:</label>
+                    <input list="iller" name="il" id="il">
+
+                    <datalist id="iller">
+                      <option value="İSTANBUL" selected>
+                      <option value="İZMİR">
+                      <option value="ANKARA">
+                      <option value="ŞANLIURFA">
+                      <option value="TRABZON">
+                      <option value="ANTALYA">
+                      <option value="SİVAS">
+                    </datalist>
+                </div>  
+                <br>
+                <div>
+                    <input type="file" name="dosya">
+                </div>    
+                <br>
+                <div> Bilgilerinizi onaylıyor musunuz?
+                    <br>
+                    <input type="checkbox" name="TOS" value="yes" checked> 
+                </div>
+                <br>
+                <div>
+                    <input type="submit">
+                    <input type="reset"> 
+                </div>
+            </form>
+        </content>
+        <br>
+        <br>
+        <hr>
+
+        <section>
+            <h1 align="center">BU SAYFA NEDEN OLUŞTURULDU?</h1>
+            <p>Bu sayfa,Sakarya Üniversitesi bilgisayar Mühendisliği eğitim-öğretim programında yer alan <b>WEB TEKNOLOJİLERİ</b> dersi kapsamında oluşturulmuştur. </p>
+        </section>
+        
+        <hr>  
+
+        <footer>
+            &copy; Copyright Mustafa Batuhan Karadağ
+        </footer>
+    </body>
+
+</html>
